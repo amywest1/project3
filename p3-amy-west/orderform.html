@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Order Now</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/ico" href="images/cookiefavicon.ico">
+
+    <link rel="icon" type="image/png" href="images/cookiefavicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Jost&family=Trocchi&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+      <header>
+          <nav>
+            <ul>
+              <li><a href="about-us.html">Meet Matt</a></li>
+              <li><a href="ordering.html">Order Thicc</a></li>
+              <li><a href="current-drop.html">Current Drop</a></li>
+              <li class="logo"><a href="home.html"><img src="images/mfc-logo.jpg" alt="Matt's Fat Cookies Logo" width='150'></a></li>
+              <li><a href="orderform.html">Order Now</a></li>
+              <li><a href="https://www.instagram.com/mattsfatcookies/" target="_blank">Instagram</a></li>
+              <li><a href="instant-cookies.html">Instant Cookies</a></li>
+            </ul>
+          </nav>
+        <h1>Place Your Order</h1>
+      </header>
+    <main>
+      <div>
+        <form id="order_form" name="order_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+          <div class="first-name input-section">
+            <label for="firstname" class="label_input_wrap">First Name:</label>
+            <input type="text" name="req_firstname" id="firstname" placeholder="ex. Cookie" />
+          </div>
+
+          <div class="last-name input-section">
+            <label for="lastname" class="label_input_wrap">Last Name:</label>
+            <input type="text" name="req_lastname" id="lastname" placeholder="ex. Monster"/>
+          </div>
+
+          <div class="email input-section">
+            <label for="email" class="label_input_wrap">Email:</label>
+            <input type="email" name="req_email" id="email" placeholder="ex. cookie@sesame.org">
+          </div>
+
+          <div class="checkbox input-section">
+            <h3>Choose your cookies:</h3>
+            <h4>If you are choosing more than one of a flavor, please make a note in the comments.</h4>
+            <div class="checkbox input-section">
+              <input type="checkbox" name="cookie1" value="CC2" id="CC2"/><label for="CC2">Chocolate Chip^2</label>
+            </div>
+            <div class="checkbox input-section">
+              <input type="checkbox" name="cookie2" value="pkn" id="pkn"/><label for="pkn">PKN SZN</label>
+            </div>
+            <div class="checkbox input-section">
+              <input type="checkbox" name="cookie3" value="legend" id="legend"/><label for="legend">Levain Legend</label>
+            </div>
+            <div class="checkbox input-section">
+              <input type="checkbox" name="cookie4" value="reeses" id="reeses"/><label for="reeses">Reeses 2.0</label>
+            </div>
+            <div class="checkbox input-section">
+              <input type="checkbox" name="cookie5" value="quar" id="quar"/><label for="quar">Quarantine Party</label>
+            </div>
+            <div class="checkbox input-section">
+              <input type="checkbox" name="cookie6" value="mnm" id="mnm"/><label for="mnm">The Real Thicc Shady</label>
+            </div>
+          </div>
+
+          <div class="radiobutton input-section">
+            <h3>Where will you get your cookies?</h3>
+            <h4>Make sure to include your address if choosing shipping.</h4>
+            <div class="radiobutton input-section">
+              <input type="radio" name="pickup" value="brandon" id="brandon"/><label for="brandon">Brandon Rev</label>
+            </div>
+            <div class="radiobutton input-section">
+              <input type="radio" name="pickup" value="semhei" id="semhei"/><label for="semhei">Seminole Heights Rev</label>
+            </div>
+            <div class="radiobutton input-section">
+              <input type="radio" name="pickup" value="stampa" id="stampa"/><label for="stampa">South Tampa Rev</label>
+            </div>
+            <div class="radiobutton input-section">
+              <input type="radio" name="pickup" value="ohyeah" id="ohyeah"/><label for="ohyeah">Oh Yeah Creamery</label>
+            </div>
+            <div class="radiobutton input-section">
+              <input type="radio" name="pickup" value="ship" id="ship"/><label for="ship">Ship them to me!</label>
+            </div>
+          </div>
+
+          <div class="comments input-section">
+            <label for="comments" class="label_input_wrap">Comments:</label>
+            <textarea name="comments" rows="8" cols="80" id="comments" placeholder="Comments"></textarea>
+          </div>
+
+          <div class="reset">
+            <input type="reset" value="Refresh Form" />
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Place Order" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <img src="images/mfc-logo.jpg" alt="MFC Logo">
+      <h2>Matt's Fat Cookies</h2>
+      <div class="tagline">
+        <p>If it ain't THICC... it ain't worth it</p>
+      </div>
+    </footer>
+  </body>
+</html>

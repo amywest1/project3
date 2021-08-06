@@ -1,0 +1,513 @@
+/* ---------
+
+Universal Styling
+
+------------ */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+}
+
+header {
+  background: white;
+  color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  text-align: center;
+}
+
+header nav {
+  display: inline-block;
+}
+
+header nav li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 36px;
+  padding: 0 5px;
+}
+
+li:not(.logo) {
+  margin-top: 40px;
+}
+
+.logo {
+  margin: 0 30px;
+}
+header nav a {
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  color: black;
+  transition: 0.1s;
+  padding: 0 10px;
+}
+
+header nav li:not(.logo) a:hover {
+  background: #F1ACBE;
+  border: solid black 3px;
+  border-radius: 22px;
+}
+
+header nav li:not(.logo) a:active {
+  background: tan;
+  border: solid black 3px;
+  border-radius: 22px;
+}
+
+header h2 {
+  font-family: 'Jost', sans-serif;
+  background: tan;
+}
+
+header h1 {
+  font-family: 'Trocchi', serif;
+  font-size: 55px;
+  text-align: center;
+  background: tan;
+  padding: 50px;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+
+main h1 {
+  font-family: 'Trocchi', serif;
+  text-align: left;
+  margin: 20px 20px 20px 80px;
+  background: white;
+  font-size: 56px;
+  text-shadow: 3px 3px grey;
+}
+
+.container {
+  max-width: 90%;
+  margin: 200px auto;
+  margin-bottom: 0px;
+  background: white;
+}
+
+/* -----------------------
+
+Home Styling
+
+-------------------- */
+
+.cookies {
+  max-width: 100%;
+  margin: 0 auto;
+  background: white;
+}
+
+.cookies img {
+  width: 400px;
+  height: 400px;
+  border-color: #F1ACBE;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+h3 {
+    background: tan;
+    width: 400px;
+    font-family: 'Trocchi', serif;
+    font-size: 24pt;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    padding: 10px 10px 2px;
+    display: inline-block;
+  }
+
+p {
+    background: tan;
+    width: 400px;
+    font-size: 22px;
+    font-family: 'Trocchi', serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 10px 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.left {
+    width: 41%;
+    display: inline-block;
+    padding: 0 0 20px 255px;
+}
+
+.right {
+      width: 41%;
+      display: inline-block;
+      padding: 0 0px 20px 0;
+}
+
+.description {
+    vertical-align: top;
+    margin: 142px 0;
+}
+
+/* -----------------------
+
+About Us Styling
+
+-------------------- */
+.about .hero {
+  height: 400px;
+  opacity: 0.6;
+}
+
+.about h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 88px;
+    font-family: 'Trocchi', serif;
+    padding: 121px 570px;
+    background: content-box;
+}
+
+.left-float {
+  float: left;
+  margin: 25px;
+}
+
+.right-float {
+  float: right;
+  margin: 25px;
+}
+
+.about h2 {
+    font-family: 'Trocchi', serif;
+    font-size: 47px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about p {
+    background: white;
+    width: 75%;
+    font-family: 'Jost', sans-serif;
+    display: block;
+    border-radius: 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 40px;
+}
+
+/* ---------
+
+Ordering Styling
+
+-------------- */
+.ordering .hero {
+  height: 400px;
+  opacity: 0.6;
+}
+
+.ordering h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 88px;
+    font-family: 'Trocchi', serif;
+    padding: 121px 486px;
+    background: content-box;
+}
+
+.ordering h2 {
+    font-family: 'Trocchi', serif;
+    font-size: 55px;
+    margin: 10px 0 10px 40px;
+}
+
+.ordering h3 {
+    background: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: bolder;
+    font-size: 36px;
+    display: block;
+    width: 50%;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.ordering p {
+    background: white;
+    font-family: 'Jost', sans-serif;
+    text-align: left;
+    width: 50%;
+    padding-left: 40px;
+}
+.ordering img:not(.hero) {
+    position: absolute;
+    margin: 100px 0 0 55%;
+}
+
+/* ---------
+
+Current Drop Styling
+
+-------------- */
+.drop h1 {
+  text-align: center;
+  background: tan;
+  padding: 20px;
+  width: 100%;
+  margin: 200px 0 0 0;
+  }
+
+.drop .container {
+    padding: 36px 0;
+    margin: 0 auto;
+  }
+
+.drop .current-cookies {
+  width: 49%;
+  display: inline-block;
+  padding: 0 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.cookie-image {
+    border: #F1ACBE solid 5px;
+    border-radius: 5px;
+}
+
+.drop p {
+  font-family: 'Jost', sans-serif;
+  background: white;
+  padding-top: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+  margin: 0 0 25px 239px;
+  border-radius: 5px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 5px;
+}
+
+.flip-card-back {
+  background-color: tan;
+  color: black;
+  font-family: 'Jost', sans-serif;
+  transform: rotateY(180deg);
+  border: #F1ACBE solid 5px;
+  border-radius: 5px;
+}
+
+.flip-card-back p {
+  background-color: tan;
+}
+
+.flip-card-back p:first-of-type {
+  padding-top: 175px;
+  font-weight: bolder;
+}
+
+/* ---------
+
+Instant Cookies Styling
+
+-------------- */
+
+.instant h1 {
+  text-align: center;
+  background: tan;
+  padding: 20px;
+  width: 100%;
+  margin: 200px 0 0 0;
+  }
+
+.instant .container {
+  margin: 0 auto;
+  width: 90%;
+  height: 700px;
+}
+.instant img:not(.logo) {
+    padding: 25px;
+    max-width: 550px;
+    margin: 0 0 0 178px;
+    display: inline;
+}
+
+span.lb-caption {
+    font-size: 24px !important;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500 !important;
+}
+
+.animation {
+    max-width: 200px;
+    animation:cookiewalk 6s linear infinite;
+}
+
+@keyframes cookiewalk {
+  0% {
+    transform: translateX(-200px) scaleX(1);
+  }
+  75% {
+    transform: scaleX(2) scaleY(2);
+  }
+  100%{
+    transform: translateX(1000px) scaleX(1);
+  }
+}
+/* ---------
+
+Form Styling
+
+-------------- */
+
+
+form {
+  background: #f1ACBE;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  margin-top: 327px;
+}
+
+.label_input_wrap {
+  display: block;
+  font-size: 24px;
+}
+
+h4 {
+  padding: 5px;
+}
+
+.input-section input {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.input-section textarea {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.reset input,
+.submit input {
+  background: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+::placeholder {
+  color: tan;
+}
+
+.reset,
+.submit {
+  display: inline;
+}
+
+.input-section {
+  margin-bottom: 5px;
+}
+
+.checkbox label,
+.radiobutton label {
+    padding: 0 0 0 10px;
+}
+
+
+/* ------------
+
+Footer Styling
+
+----------------- */
+
+.footer {
+  background: tan;
+  padding: 20px 0 35px;
+  text-align: center;
+
+}
+
+.footer img {
+    max-width: 157px;
+    border-radius: 74px;
+    float: left;
+    margin: 15px -364px 0 225px;
+  }
+
+.footer h2 {
+    display: inline;
+    padding: 10px;
+    font-family: 'Trocchi', serif;
+    font-size: 30px;
+}
+
+.footer h2::before {
+  content: url(../images/cookiefavicon.png);
+}
+
+.footer h2::after {
+  content: url(../images/cookiefavicon.png);
+}
+
+.footer h2:last-of-type {
+  font-family: 'Jost', sans-serif;
+}
+
+.footer p {
+   width: 100%;
+   font-size: 55px;
+   font-family: 'Caveat Brush', cursive;
+   padding: 30px 0;
+   display: inherit;
+   background: tan;
+}
